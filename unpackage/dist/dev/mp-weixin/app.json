@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/profile/profile",
-    "pages/ablum/ablum"
+    "pages/ablum/ablum",
+    "unpackage/1"
   ],
   "window": {
     "navigationBarTextStyle": "black",

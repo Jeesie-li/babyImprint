@@ -6,6 +6,7 @@ if (!Math) {
   "./pages/index/index.js";
   "./pages/profile/profile.js";
   "./pages/ablum/ablum.js";
+  "./unpackage/1.js";
 }
 const _sfc_main = {
   onLaunch: function() {

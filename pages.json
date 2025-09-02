@@ -20,6 +20,13 @@
         "navigationBarTitleText" : "",
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path" : "unpackage/1",
+      "style" : 
+      {
+        "navigationBarTitleText" : ""
+      }
     }
 	],
   "tabBar": {
