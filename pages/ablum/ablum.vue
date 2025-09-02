@@ -12,11 +12,13 @@ import { ref } from 'vue'
 
 <style lang="scss" scoped>
 .ablum{
+  // display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   .container{
     flex: 1;
-    min-height: 0;
+    width: 100vw;
     background-color: seagreen;
   }
 }
