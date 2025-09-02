@@ -1,6 +1,6 @@
 import App from './App'
 import { store } from './store/index.js'
-// import './uni.scss'
+import './uni.scss'
 // #ifndef VUE3
 import Vue from 'vue'
 import './uni.promisify.adaptor'

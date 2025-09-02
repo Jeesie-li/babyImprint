@@ -1,7 +1,9 @@
 <template>
-  <view class="ablum flex">
+  <view class="ablum">
     <navBar></navBar>
-    <view class="container">112213</view>
+    <view class="container">
+			1
+		</view>
   </view>
 </template>
 
@@ -12,14 +14,14 @@ import { ref } from 'vue'
 
 <style lang="scss" scoped>
 .ablum{
-  // display: flex;
+	display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
   .container{
     flex: 1;
-    width: 100vw;
+    // width: 100vw;
     background-color: seagreen;
+		
   }
 }
 </style>

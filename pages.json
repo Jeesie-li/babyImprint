@@ -10,7 +10,8 @@
       "path" : "pages/profile/profile",
       "style" : 
       {
-        "navigationBarTitleText" : ""
+        "navigationBarTitleText" : "宝贝中心",
+				"navigationBarBackgroundColor": "#fff"
       }
     },
     {
@@ -23,23 +24,24 @@
     }
 	],
   "tabBar": {
+		"borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "/static/tabbar_icons/index.png",
+        "selectedIconPath": "/static/tabbar_icons/index_active.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/ablum/ablum",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "/static/tabbar_icons/ablum.png",
+        "selectedIconPath": "/static/tabbar_icons/ablum_active.png",
         "text": "成长档案"
       },
       {
         "pagePath": "pages/profile/profile",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "/static/tabbar_icons/profile.png",
+        "selectedIconPath": "/static/tabbar_icons/profile_active.png",
         "text": "我的"
       }
     ]
