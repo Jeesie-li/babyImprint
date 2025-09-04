@@ -1,5 +1,5 @@
 <template>
-  <view class="navBar" :style="{height: `${navBarConfig.navBarHeight}rpx`,paddingTop: `${navBarConfig.statusBarHeight}rpx`}">
+  <view class="navBar" :style="{height: `${navBarConfig.navBarHeight}px`,paddingTop: `${navBarConfig.statusBarHeight}px`}">
     1
   </view>
 </template>
@@ -19,16 +19,12 @@
   function getSystemInfo(){
     const res = uni.getSystemInfoSync()
     const menuBtn = uni.getMenuButtonBoundingClientRect()
-    console.log(res,'res')
-    console.log(menuBtn,'menuBtn')
-    navBarConfig.statusBarHeight = res.statusBarHeight * 2
-    navBarConfig.navBarHeight = (menuBtn.top + menuBtn.bottom - res.statusBarHeight) * 2
-    console.log(navBarConfig)
+    navBarConfig.statusBarHeight = res.statusBarHeight
+    navBarConfig.navBarHeight = (res.statusBarHeight + menuBtn.height + (menuBtn.top - res.statusBarHeight) * 2)
   }
 </script>
 
 <style scoped lang="scss">
   .navBar{
-    background-color: red;
   }
 </style>;

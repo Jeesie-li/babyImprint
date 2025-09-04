@@ -1,14 +1,20 @@
 <template>
-  <view class="ablum">
-    <navBar></navBar>
+  <scroll-view class="ablum" scroll-y="true">
+    <view class="info">
+      <navBar></navBar>
+      <view class="info-con">
+        1
+      </view>
+    </view>
     <view class="container">
-			1
+			<CircleItem v-for="ele in 10" :key="ele"></CircleItem>
 		</view>
-  </view>
+  </scroll-view>
 </template>
 
 <script setup>
-  import navBar from '@/components/navBar/navBar.vue'
+import navBar from '@/components/navBar/navBar.vue'
+import CircleItem from '@/components/circleItem/circleItem.vue'
 import { ref } from 'vue'
 </script>
 
@@ -17,11 +23,17 @@ import { ref } from 'vue'
 	display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
+  // overflow: hidden;
+  .info{
+    height: 320rpx;
+    background: url('/static/bg/bg.jpg') no-repeat 100%;
+    background-size: cover;
+  }
   .container{
+    padding: 0 $uni-padding-l;
     flex: 1;
-    // width: 100vw;
-    background-color: seagreen;
-		
+    background-color: $uni-bg-color-hover;
   }
 }
 </style>
