@@ -9,6 +9,7 @@
     <view class="container">
 			<CircleItem v-for="ele in 10" :key="ele"></CircleItem>
 		</view>
+    <view class="add" @click="toAdd">记录</view>
   </scroll-view>
 </template>
 
@@ -16,6 +17,13 @@
 import navBar from '@/components/navBar/navBar.vue'
 import CircleItem from '@/components/circleItem/circleItem.vue'
 import { ref } from 'vue'
+
+function toAdd(){
+  console.log('跳转')
+  uni.navigateTo({
+    url: "/subPages/addRecord/addRecord"
+  })
+}
 </script>
 
 <style lang="scss" scoped>
@@ -34,6 +42,18 @@ import { ref } from 'vue'
     padding: 0 $uni-padding-l;
     flex: 1;
     background-color: $uni-bg-color-hover;
+  }
+  .add{
+    position: fixed;
+    right: $uni-margin-l;
+    bottom: $uni-margin-l;
+    width: 120rpx;
+    height: 120rpx;
+    text-align: center;
+    line-height: 120rpx;
+    border-radius: $uni-border-radius-circle;
+    background-color: #67d5b5;
+    color: #fff;
   }
 }
 </style>

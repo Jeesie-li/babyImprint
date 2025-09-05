@@ -23,6 +23,19 @@
       }
     }
 	],
+  "subPackages": [
+    {
+      "root": "subPages",
+      "pages": [
+        {
+          "path": "addRecord/addRecord",
+          "style": {
+            "navigationBarTitleText": "发布记录"
+          }
+        }
+      ]
+    }
+  ],
   "tabBar": {
 		"borderStyle": "white",
     "list": [
